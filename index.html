@@ -32,22 +32,29 @@
         alt=""
       />
       <nav
-        class="flex lg:relative lg:justify-between items-center max-w-[1400px] mx-auto z-1"
+        class="flex w-[90%] lg:w-[100%] lg:relative justify-between items-center max-w-[1400px] mx-auto z-1"
       >
-        <img class="w-[291px]" src="icons/logo.png" alt="Logo" />
+        <img
+          class="w-[70%] lg:w-[100%] max-w-[291px]"
+          src="icons/logo.png"
+          alt="Logo"
+        />
         <ul
-          class="flex gap-14 secondary-font list-none text-[#3C3C3C] font-medium"
+          class="lg:flex hidden gap-14 secondary-font list-none text-[#3C3C3C] font-medium"
         >
           <li><a class="no-underline" href="">Home</a></li>
           <li><a class="no-underline" href="">Products</a></li>
           <li><a class="no-underline" href="">About Us</a></li>
           <li><a class="no-underline" href="">Contact Us</a></li>
         </ul>
+        <div class="block lg:hidden"><i class="fa-solid fa-bars"></i></div>
       </nav>
-      <section class="flex justify-between items-center max-w-[1400px] mx-auto">
+      <section
+        class="sm:flex w-[90%] lg:w-[100%] sm:gap-40 space-y-12 lg:space-y-0 justify-between items-center max-w-[1400px] mx-auto"
+      >
         <div class="max-w-[416px]">
-          <h1 class="text-[80px] primary-font uppercase">
-            <span class="text-[#FABE4C]">Be the Penguins</span>
+          <h1 class="text-[60px] lg:text-[80px] primary-font uppercase">
+            <span class="text-[#FABE4C]">Be the Penguins</span> <br />
             <span class="text-[#363958]">of Winter</span>
           </h1>
           <p class="my-3 secondary-font text-[#3E3E3E]">
@@ -68,12 +75,16 @@
         </div>
       </section>
     </header>
-    <main class="max-w-[1400px] mx-auto">
+    <main class="max-w-[1400px] mx-auto w-[90%] lg:w-[100%]">
       <section class="my-24">
-        <h2 class="primary-font mb-12 text-5xl text-[#363958]">Woman Jacket</h2>
+        <h2
+          class="primary-font mb-12 text-center sm:text-left text-5xl text-[#363958]"
+        >
+          Woman Jacket
+        </h2>
         <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 secondary-font">
           <div
-            class="p-5 shadow-[0_10px_30px_0_rgba(0,0,0,.05)] flex-1 rounded-[20px]"
+            class="p-5 shadow-[0_10px_30px_0_rgba(0,0,0,.05)] rounded-[20px] flex-1"
           >
             <img
               class="p-5 bg-[#F1F1F1] w-[100%] rounded-[20px]"
@@ -148,7 +159,11 @@
         </div>
       </section>
       <section class="my-24">
-        <h2 class="primary-font mb-12 text-5xl text-[#363958]">Man Jacket</h2>
+        <h2
+          class="primary-font mb-12 text-5xl text-center sm:text-left text-[#363958]"
+        >
+          Man Jacket
+        </h2>
         <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 secondary-font">
           <div
             class="p-5 shadow-[0_10px_30px_0_rgba(0,0,0,.05)] flex-1 rounded-[20px]"
@@ -225,6 +240,60 @@
               </button>
             </div>
           </div>
+        </div>
+      </section>
+      <section
+        class="flex lgflex-row gap-12 flex-col-reverse justify-between items-center mb-[200px]"
+      >
+        <div class="space-y-4">
+          <div
+            class="flex flex-col lg:flex-row text-center lg:text-left max-w-[500px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] rounded-[20px] secondary-font p-7 gap-9 items-center"
+          >
+            <div>
+              <img class="max-w-20" src="icons/house.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold">
+                Find the Perfect Fit
+              </h3>
+              <p class="text-[#3E3E3E]">
+                Everybody is different, which is why we offer styles for every
+                body.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row text-center lg:text-left max-w-[500px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] rounded-[20px] secondary-font p-7 gap-9 items-center"
+          >
+            <div>
+              <img class="max-w-20" src="icons/box.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold">Free Exchanges</h3>
+              <p class="text-[#3E3E3E]">
+                One of the many reasons you can shop with peace of mind.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row text-center lg:text-left max-w-[500px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] rounded-[20px] secondary-font p-7 gap-9 items-center"
+          >
+            <div>
+              <img class="max-w-20" src="icons/question.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold">
+                Contact Our Seller
+              </h3>
+              <p class="text-[#3E3E3E]">
+                They are here to help you. That's quite literally what we pay
+                them for.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="w-[90%] mx-auto" src="images/shopping.png" alt="" />
         </div>
       </section>
     </main>
